@@ -1,0 +1,87 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 13, 2018, 12:09:52 PM
+    Author     : mithu
+*/
+
+.parent{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #CCC;
+    /*create for 3D space*/
+    perspective: 600px;
+    border: 2px solid black;
+}
+.child{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    line-height: 200px !important;
+    text-align: center;
+    color: white;
+    font-size: 35px !important;
+    font-weight: bold;
+    /*creat 3D space for children*/
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    cursor: pointer;
+    transform: translateZ(-50px);
+}
+.allDes{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.front{
+    background: #FF4C4C;
+    opacity: 0.8;
+    transform: rotateY(0deg) translateZ(100px);
+}
+.back{
+    background: #040404;
+    opacity: 0.8;
+    transform: rotateY(180deg) translateZ(100px);
+}
+.top{
+    background: #3399FF;
+    opacity: 0.8;
+    transform: rotateX(90deg) translateZ(100px);
+}
+.bottom{
+    background: #4CFFFF;
+    opacity: 0.8;
+    transform: rotateX(-90deg) translateZ(100px);
+}
+.left{
+    background: #4C4CFF;
+    opacity: 0.8;
+    transform: rotateY(-90deg) translateZ(100px);
+}
+.right{
+    background: #FF4CFF;
+    opacity: 0.8;
+    transform: rotateY(90deg) translateZ(100px);
+}
+/*this is user choosen part*/
+.show-front{
+    transform: translateZ(-100px) rotateY(0deg);
+}
+.show-back{
+    transform: translateZ(-100px) rotateY(-180deg);
+}
+.show-top{
+    transform: translateZ(-100px) rotateX(-90deg);
+}
+.show-bottom{
+    transform: translateZ(-100px) rotateX(90deg);
+}
+.show-left{
+    transform: translateZ(-100px) rotateY(90deg);
+}
+.show-right{
+    transform: translateZ(-100px) rotateY(-90deg);
+}

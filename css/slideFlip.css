@@ -28,6 +28,7 @@ and open the template in the editor.
     transform-style: preserve-3d;
     transition: transform 1s;
     cursor: pointer;
+    transform-origin: center right;
 }
 .allDes{
     width: 100%;
@@ -52,5 +53,5 @@ and open the template in the editor.
     transform: rotateY(180deg);
 }
 .isFillped{
-    transform: rotateY(180deg);
+    transform: translateX(-100%) rotateY(-180deg);
 }

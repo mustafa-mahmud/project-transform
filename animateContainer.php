@@ -17,9 +17,9 @@ and open the template in the editor.
         <!--[if lte IE 9]>
         <link href='/PATH/TO/FOLDER/css/animations-ie-fix.css' rel='stylesheet'>
         <![endif]-->
-        <title>Transforms</title>
+        <title>Animate Container</title>
         <!----CSS----->
-        <link rel="stylesheet" href="css/cardFlip.css" />
+        <link rel="stylesheet" href="css/animateContainer.css" />
         <link rel="stylesheet" href="css/bootstrap.css" />
         <link rel="stylesheet" href="css/practise.css" />
         <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.min.css" />
@@ -28,22 +28,15 @@ and open the template in the editor.
         <script src="js/bootstrap.js"></script>
     </head>
     <body>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="parent m-5">
-                    <div class="child">
-                        <div class="allDes front">front</div>
-                        <div class="allDes back">back</div>
-                    </div>
-                </div>
+        <!-- this design from : https://css-tricks.com/animate-a-container-on-mouse-over-using-perspective-and-transform/  --->
+        <div id="container">
+            <div id="inner">
+                <!--<span id="helper" class="hidden"></span>-->
             </div>
         </div>
         <!---JS---->
         <script type="text/javascript">
-            var filpped = document.querySelector(".child");
-            filpped.addEventListener("click", function () {
-                this.classList.toggle("isFillped");
-            });
         </script>
+        <script src="js/animateContainer.js"></script>
     </body>
 </html>

@@ -1,0 +1,54 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 20, 2018, 10:27:09 AM
+    Author     : mithu
+*/
+
+.parent{
+    width: 250px;
+    height: 150px;
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    perspective: 800px;
+}
+.child{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.elements{
+    position: absolute;
+    width: 230px;
+    height: 130px;
+    left: 9px;
+    top: 9px;
+    text-align: center;
+    line-height: 135px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    border: 2px solid black;
+}
+.elements:nth-child(10n+1){background: red;}
+.elements:nth-child(10n+2){background: blue;}
+.elements:nth-child(10n+3){background: olive;}
+.elements:nth-child(10n+4){background: yellow;}
+.elements:nth-child(10n+5){background: green;}
+.elements:nth-child(10n+6){background: black;}
+.elements:nth-child(10n+7){background: gray;}
+.elements:nth-child(10n+8){background: chocolate;}
+.elements:nth-child(10n+9){background: purple;}
+.elements:nth-child(10n+0){background: pink;}
+
+.btnRotate{
+    width: 200px;
+    margin: 0 auto;
+}

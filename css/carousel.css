@@ -1,0 +1,89 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 14, 2018, 9:48:08 PM
+    Author     : mithu
+*/
+
+.scene{
+    width: 210px;
+    height: 140px;
+    position: relative;
+    perspective: 1000px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid #CCC;
+}
+.myCarousel{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: translateZ(-288px);
+    transition: transform 1s;
+}
+.cell{
+    position: absolute;
+    width: 190px;
+    height: 120px;
+    left: 10px;
+    top: 10px;
+    border: 2px solid black;
+    line-height: 115px;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+/*This carousel has 9cells, if all cells get an equal distribution on the carousel
+each panel would be rotated 40degrees (360/9)=40 */
+.cell:nth-child(1){
+    background: #FF3333;
+    opacity: 0.8;
+    transform: rotateY(0deg) translateZ(288px);
+}
+.cell:nth-child(2){
+    background: #FFBB33;
+    opacity: 0.8;
+    transform: rotateY(40deg) translateZ(288px);
+}
+.cell:nth-child(3){
+    background: #BBFF33;
+    opacity: 0.8;
+    transform: rotateY(80deg) translateZ(288px);
+}
+.cell:nth-child(4){
+    background: #33FF33;
+    opacity: 0.8;
+    transform: rotateY(120deg) translateZ(288px);
+}
+.cell:nth-child(5){
+    background: #33FFBB;
+    opacity: 0.8;
+    transform: rotateY(160deg) translateZ(288px);
+}
+.cell:nth-child(6){
+    background: #33BBFF;
+    opacity: 0.8;
+    transform: rotateY(200deg) translateZ(288px);
+}
+.cell:nth-child(7){
+    background: #3333FF;
+    opacity: 0.8;
+    transform: rotateY(240deg) translateZ(288px);
+}
+.cell:nth-child(8){
+    background: #BB33FF;
+    opacity: 0.8;
+    transform: rotateY(280deg) translateZ(288px);
+}
+.cell:nth-child(9){
+    background: #FF33BB;
+    opacity: 0.8;
+    transform: rotateY(320deg) translateZ(288px);
+}

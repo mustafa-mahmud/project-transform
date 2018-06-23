@@ -19,7 +19,7 @@ and open the template in the editor.
         <![endif]-->
         <title>Transforms</title>
         <!----CSS----->
-        <link rel="stylesheet" href="css/cardFlip.css" />
+        <link rel="stylesheet" href="css/slideFlip.css" />
         <link rel="stylesheet" href="css/bootstrap.css" />
         <link rel="stylesheet" href="css/practise.css" />
         <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.min.css" />
@@ -40,8 +40,8 @@ and open the template in the editor.
         </div>
         <!---JS---->
         <script type="text/javascript">
-            var filpped = document.querySelector(".child");
-            filpped.addEventListener("click", function () {
+            var child=document.querySelector(".child");
+            child.addEventListener("click",function(){
                 this.classList.toggle("isFillped");
             });
         </script>

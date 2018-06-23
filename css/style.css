@@ -1,0 +1,98 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 13, 2018, 12:09:52 PM
+    Author     : mithu
+*/
+
+.parent{
+    width: 300px;
+    height: 200px;
+    border: 1px solid #CCC;
+    margin: 100px;
+    perspective: 500px;
+}
+.child{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    text-align: center !important;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.box{
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid black;
+}
+.front{
+    background: #FF4C4C;
+    opacity: 0.8;
+    width: 300px;
+    height: 200px;
+    line-height: 200px;
+}
+.back{
+    background: #4CFF4C;
+    opacity: 0.8;
+    width: 300px;
+    height: 200px;
+    line-height: 200px;
+}
+/*in .left we used left:100px; in .right we used left:100px
+in .top we used top:50px and in .bottom we used top:50px;
+because we want all div will be in middle so that we can use
+rotate(); use z-index to see the position of the div's.
+*/
+.left{
+    width: 100px;
+    height: 200px;
+    background: #4CFFFF;
+    opacity: 0.8;
+    line-height: 200px;
+    left: 100px;
+}
+.right{
+    width: 100px;
+    height: 200px;
+    background: #FFFF4C;
+    opacity: 0.8;
+    line-height: 200px;
+    left: 100px;
+}
+.top{
+    width: 300px;
+    height: 100px;
+    background: #4C4CFF;
+    opacity: 0.8;
+    top: 50px;
+    line-height: 100px;
+    z-index: 10;
+}
+.bottom{
+    width: 300px;
+    height: 100px;
+    background: #FF4CFF;
+    opacity: 0.8;
+    top: 50px;
+    line-height: 100px;
+}
+.front{transform: rotateY(0deg) translateZ(50px)}
+.back{transform: rotateY(180deg) translateZ(50px)}
+.left{transform: rotateY(-90deg) translateZ(150px)}
+.right{transform: rotateY(90deg) translateZ(150px)}
+.top{transform: rotateX(90deg) translateZ(100px)}
+.bottom{transform: rotateX(-90deg) translateZ(100px)}
+label{margin-left: 10px !important;}
+/*user choosen area*/
+.show-front{transform: translateZ(-50px) rotateY(0deg)}
+.show-back{transform: translateZ(-50px) rotateY(-180deg)}
+.show-left{transform: translateZ(-150px) rotateY(90deg)}
+.show-right{transform: translateZ(-150px) rotateY(-90deg)}
+.show-top{transform: translateZ(-100px) rotateX(-90deg)}
+.show-bottom{transform: translateZ(-100px) rotateX(90deg)}

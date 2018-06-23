@@ -1,0 +1,61 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 20, 2018, 1:13:16 PM
+    Author     : mithu
+*/
+.parent{
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    perspective: 800px;
+    border: 2px solid black;
+}
+.child{
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+}
+.elements{
+    position: absolute;
+    width: 180px;
+    height: 130px;
+    top: 8px;
+    left: 8px;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 120px;
+    font-size: 70px;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    transition: transform 1s;
+}
+.elements:nth-child(10n+1){background: red;opacity: 0.8;}
+.elements:nth-child(10n+2){background: blue;opacity: 0.8;}
+.elements:nth-child(10n+3){background: olive;opacity: 0.8;}
+.elements:nth-child(10n+4){background: chocolate;opacity: 0.8;}
+.elements:nth-child(10n+5){background: green;opacity: 0.8;}
+.elements:nth-child(10n+6){background: yellow;opacity: 0.8;}
+.elements:nth-child(10n+7){background: azure;opacity: 0.8;}
+.elements:nth-child(10n+8){background: pink;opacity: 0.8;}
+.elements:nth-child(10n+9){background: gray;opacity: 0.8;}
+.elements:nth-child(10n+0){background: aqua;opacity: 0.8;}
+
+.btnRotate{
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+input[type=range]{
+    position: relative;
+    top: 10px;
+    display: inline-block;
+}
